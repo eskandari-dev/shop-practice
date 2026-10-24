@@ -56,7 +56,7 @@ while True:
     elif command == "3":
         show_total()
     elif command == "4":
-        print("Goodbye!")
+        print("See you next time!")
         break
     else:
         print("Unknown command")
