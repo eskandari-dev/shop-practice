@@ -40,7 +40,7 @@ def show_total():
     for product in order:
         total = total + product['price']
         print(product["name"])
-        print(f"Items: {len(order)}")
+    print(f"Items: {len(order)}")
     print(f"Total is {total}")
 
 while True:
