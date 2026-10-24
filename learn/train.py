@@ -43,11 +43,16 @@ def show_total():
     print(f"Items: {len(order)}")
     print(f"Total is {total}")
 
+def clear_order():
+    order.clear()
+    print("The order is empty")
+
 while True:
     print("1. See products")
     print("2. Add to order")
     print("3. Show total")
     print("4. Quit")
+    print("5. Clear order")
     command = input("Choose: ").strip()
 
     if command == "1":
@@ -59,6 +64,8 @@ while True:
     elif command == "4":
         print("See you next time!")
         break
+    elif command == "5":
+        clear_order()
     else:
         print("Unknown command")
 
